@@ -1,0 +1,1195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Inria Serif', sans-serif;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-color: #D3D3D3;
+}
+
+#navbar_wrapper, #quotes, #profil, #acara, #gallery, #tamu, #RSVP, #story, #gift, #ucapan, #thanks {
+    display: none !important;
+    padding: 50px;
+  }
+  
+
+  #navbar_wrapper {
+    width: 100%;
+    background-color: #FFD700;
+    padding: 10px 0; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+  }
+  
+
+.navbar_menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; 
+}
+
+.navbar_menu ul li {
+  margin: 5px 15px; 
+}
+
+.navbar_menu ul li a {
+  text-decoration: none;
+  color: #292929;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar_menu ul li a:hover {
+  background-color: #50C878; 
+  color: #FFF;
+  cursor: pointer;
+}
+
+/* Hero Section*/ 
+#hero {
+  background: linear-gradient(to bottom,	#A9A9A9 , #D3D3D3);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: top;
+}
+
+#hero h1 {
+  font-size: 100px;
+  margin: 0;
+  color: #020202;
+  font-family: 'Style Script', cursive;
+  font-weight: lighter;
+  letter-spacing: 5px;
+}
+
+#hero h2, .hero h3 {
+  font-size: 45px;
+  margin: 10px 0;
+  color: #020202;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#hero button {
+  padding: 10px 20px;
+  background-color:#50C878;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#hero h1, #hero h2, #hero h3 {
+  animation: fadeIn 1.5s ease-out forwards; 
+  opacity: 0; 
+}
+
+#hero h2 { animation-delay: 0.5s; }
+#hero h1 { animation-delay: 1s; }
+#hero h3 { animation-delay: 1.5s; }
+
+
+.ornamen1 {
+  position: absolute;
+  bottom: 0px;
+  left: 5px;;
+  margin-right: 10px;
+}
+
+.ornamen2 {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  margin-left: 10px;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.ornamen1 img, .ornamen2 img {
+  animation: floating 3s infinite ease-in-out;
+}
+
+
+/*musik*/
+#kotak-musik{
+  display: none;
+}
+
+#tombol-musik{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFD700;
+  border-radius: 100%;
+  padding: 20px;
+
+}
+
+#tombol-musik img{
+  width: 30px;
+  height: 30px;
+}
+
+/* Quotes Section */
+.section-quotes {
+  margin-bottom: 50px;
+  background-color: #C0C0C0;
+  padding: 70px;
+  text-align: center;
+
+}
+
+.quotes-card{
+  top: 50%;
+  left: 50%;
+  background-color: #50C878; 
+  padding: 20px;
+  border-radius: 10px; 
+  text-align: center;
+
+}
+
+.section-quotes h2 {
+  text-align: center;
+  font-family: 'Niconne';
+  font-weight: lighter;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.section-quotes p {
+  font-size: 24px;
+  color: #020202;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.ornamen-bunga {
+  position: absolute;
+  display: block;
+  top: 40px;
+  width: 400px; 
+  right: 0px;
+}
+
+/* Profil Pengantin*/
+.section-profil {
+  padding: 50px;
+  background-color: #C0C0C0;
+  text-align: center;
+}
+
+.profil-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.section-profil h2{
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+.pengantin img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.ig-link {
+  text-decoration: none; 
+}
+
+.ornamen3{
+  position: absolute;
+  top: 70%;
+  left: 0;
+  margin: -50px;
+}
+
+.ornamen4{
+  position: absolute;
+  top: 70%; 
+  right: 0;
+  margin: -50px;
+}
+
+
+/*Tanggal & lokasi*/
+.section-title {
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 30px;
+  font-family: 'Niconne';
+  font-weight: lighter;
+  padding: 50px;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.event-card {
+  background-color: #50C878;
+  width: 240px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-card h3 {
+  text-align: center;
+  font-family: 'Niconne';
+  font-weight: lighter;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.event-card p {
+  font-size: 18px;
+  color: #d1050c;
+  margin: 5px 0;
+}
+
+.location-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #e9f4ab;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.location-link:hover {
+  background-color: #FFD700;
+}
+
+
+/*gallery*/
+.gallery-section {
+  padding: 50px 0;
+  background-color: #C0C0C0;;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: lighter;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.gallery-item {
+  background-color:  #50C878;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.gallery-item img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px ;
+  transition: translateY(-10px);
+  cursor: pointer;
+  }
+
+.gallery-item img:hover {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+
+/*Video Pengantin*/
+.video-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+}
+
+/*Tamu spesial*/
+.table-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0;
+  background-color: #50C878;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: lighter;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #FFD700;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+/*kehadiran*/
+#RSVP {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #50C878;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#RSVP h1 {
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: lighter;
+}
+
+#RSVP p {
+  text-align: center;
+  color: #555;
+}
+
+.rsvp-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#RSVP label {
+  margin-top: 15px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="pt"],
+select,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+  background-color: #C0C0C0;
+}
+
+.radio-container input:checked ~ .checkmark {
+  background-color: #FFD700;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.rsvp-form input[type="checkbox"] {
+  margin-left: 0;
+  width: auto;
+}
+
+.rsvp-form label[for="transport"],
+.rsvp-form label[for="makanan-khusus"] {
+  font-weight: normal;
+  margin-left: 25px;
+  display: inline-block;
+}
+
+.rsvp-form input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+}
+
+#RSVP button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#RSVP button:hover {
+  background-color: #d1050c;
+}
+
+#jumlah-tamu {
+  width: 100px;
+  padding: 5px;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+
+}
+
+/* Story */
+.story-section {
+  padding: 50px 0;
+  background-color: #C0C0C0;;
+  text-align: center;
+}
+
+.story-section h2 {
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: lighter;
+}
+
+.story-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.story-item {
+  background-color:  #50C878;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.story-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.story-item h3 {
+  font-size: 24px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.story-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+
+/*hadiah*/
+.gift-section h2 {
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+.gift-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.gift-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.gift-option {
+  background-color: #50C878;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.gift-option h3 {
+  font-size: 24px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.gift-option p {
+  font-size: 16px;
+  color: #555;
+}
+
+/*ucapan dan doa*/
+.ucapan-section h2 {
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+.ucapan-entry {
+  background-color: #50C878;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ucapan-details h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #020202;
+}
+
+.ucapan-details blockquote {
+  margin-top: 10px;
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  background: #e9f4ab;
+  padding: 15px;
+  border-left: 4px solid #d1050c;
+  border-radius: 5px;
+}
+
+.ucapan-entry:hover {
+  transform: translateY(5px);
+  transition: all 0.3s ease;
+}
+
+/*pesan & doa*/
+#pesan {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #50C878;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#pesan h1 {
+  font-size: 32px;
+  color: rgb(41, 41, 41);
+  margin-bottom: 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: lighter;
+}
+
+#pesan p {
+  text-align: center;
+  color: #555;
+}
+
+.pesan-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#pesan label {
+  margin-top: 15px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="p1"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d1050c;
+  border-radius: 5px;
+}
+
+#pesan input {
+  background-color: white;
+}
+
+#pesan button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#pesan button:hover {
+  background-color: #d1050c;
+}
+
+
+/*ucapan terima kasih*/
+.thank-you-section h2 {
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+.thank-you-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.thank-you-section h3 {
+  text-align: center;
+  font-size: 64px;
+  color: rgb(41, 41, 41);
+  margin: 30px 0;
+  font-family: 'Niconne';
+  font-weight: lighter;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+  #navbar_wrapper {
+    padding: 5px;
+  }
+
+  #navbar_wrapper nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar_wrapper nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: 350px;
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+  }
+
+  #hero h2, .hero h3 {
+    font-size: 18px;
+  }
+
+  #hero button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .ornamen1 {
+    left: 5px;
+    margin-right: 30px;
+  }
+
+  .ornamen2 {
+    right: 5px;
+    margin-left: 30px;
+  }
+
+  .ornamen-bunga {
+    width: 80px;
+    margin-top: 10px;
+  }
+
+  /* Profil Pengantin Section */
+  .section-profil h2 {
+    font-size: 28px;
+  }
+
+  .profil-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pengantin img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Acara Section */
+  .event-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Story Section */
+  .story-section h2 {
+    font-size: 28px;
+  }
+
+  .story-container {
+    flex-direction: column;
+  }
+
+  .story-item {
+    max-width: 100%;
+  }
+
+  /* Gift Section */
+  .gift-section h2 {
+    font-size: 28px;
+  }
+
+  .gift-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .gift-option {
+    width: 100%;
+  }
+
+  /* Thank You Section */
+  .thank-you-section h2, .thank-you-section h3 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #navbar_wrapper {
+    padding: 5px;
+  }
+
+  #navbar_wrapper nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar_wrapper nav ul li {
+    margin: 5px 0;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: 400px;
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  #hero h2, .hero h3 {
+    font-size: 20px;
+  }
+
+  #hero button {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .ornamen1 {
+    left: 10px;
+    margin-right: 40px;
+  }
+
+  .ornamen2 {
+    right: 10px;
+    margin-left: 40px;
+  }
+
+  .ornamen-bunga {
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  /* Profil Pengantin Section */
+  .section-profil h2 {
+    font-size: 32px;
+  }
+
+  .profil-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pengantin img {
+    width: 110px;
+    height: 110px;
+  }
+
+  /* Acara Section */
+  .event-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Story Section */
+  .story-section h2 {
+    font-size: 32px;
+  }
+
+  .story-container {
+    flex-direction: column;
+  }
+
+  .story-item {
+    max-width: 100%;
+  }
+
+  /* Gift Section */
+  .gift-section h2 {
+    font-size: 32px;
+  }
+
+  .gift-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gift-option {
+    width: 100%;
+  }
+
+  /* Thank You Section */
+  .thank-you-section h2, .thank-you-section h3 {
+    font-size: 32px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  #navbar_wrapper {
+    padding: 5px;
+  }
+
+  #navbar_wrapper nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar_wrapper nav ul li {
+    margin: 5px 0;
+  }
+
+
+  /* Hero Section */
+  #hero {
+    height: 400px;
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  #hero h2, .hero h3 {
+    font-size: 24px;
+  }
+
+  #hero button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .ornamen1 {
+    left: 10px; 
+    margin-right: 50px;
+  }
+
+  .ornamen2 {
+    right: 10px;
+    margin-left: 50px;
+  }
+
+  .ornamen-bunga {
+    width: 120px; 
+    margin-top: 10px;
+  }
+
+  /* Profil Pengantin Section*/
+  .section-profil h2 {
+    font-size: 36px;
+  }
+
+  .profil-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .pengantin img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Acara Section*/
+  .event-cards {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+  /* Story Section*/
+  .story-section h2 {
+    font-size: 36px;
+  }
+
+  .story-container {
+    flex-direction: column;
+  }
+
+  .story-item {
+    max-width: 100%;
+  }
+
+  /* Gift Section*/
+  .gift-section h2 {
+    font-size: 36px;
+  }
+
+  .gift-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gift-option {
+    width: 100%;
+  }
+
+  /* Thank You Section */
+  .thank-you-section h2, .thank-you-section h3 {
+    font-size: 36px;
+  }
+}
+
+/* Mobile Landscape - max width 1024px*/ 
+@media screen and (max-width: 1024px) {
+   /* Navbar */
+   #navbar_wrapper {
+    padding: 5px;
+  }
+
+  #navbar_wrapper nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navbar_wrapper nav ul li {
+    margin: 5px 0;
+
+  }
+  /* Hero Section */
+  #hero {
+    height: 500px;
+  }
+
+  #hero h1 {
+    font-size: 64px;
+  }
+
+  #hero h2, .hero h3 {
+    font-size: 32px;
+  }
+
+  /* Profil Pengantin Section */
+  .section-profil h2 {
+    font-size: 48px;
+  }
+
+  .profil-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pengantin img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Acara Section*/ 
+  .acara h1 {
+    font-size: 48px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  /* Story Section */
+  .story-section h2 {
+    font-size: 48px;
+  }
+
+  .story-container {
+    flex-direction: column;
+  }
+
+  .story-item {
+    max-width: 100%;
+  }
+
+  /* Gift Section */
+  .gift-section h2 {
+    font-size: 48px;
+  }
+
+  .gift-options {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gift-option {
+    width: 100%;
+  }
+
+  /* Thank You Section */
+  .thank-you-section h2, .thank-you-section h3 {
+    font-size: 48px;
+  }
+
+}
+
