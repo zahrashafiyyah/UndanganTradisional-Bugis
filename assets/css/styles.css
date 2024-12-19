@@ -22,8 +22,8 @@ body {
 }
 
 #navbar_wrapper, #quotes, #profil, #acara, #gallery, #tamu, #RSVP, #story, #gift, #ucapan, #thanks {
-    display: none !important;
     padding: 50px;
+    display: inline-block;
   }
   
 
@@ -155,7 +155,7 @@ body {
 
 /*musik*/
 #kotak-musik{
-  display: none;
+  display: inline-block;
 }
 
 #tombol-musik{
@@ -254,14 +254,14 @@ img {
 
 .ornamen3{
   position: absolute;
-  top: 70%;
+  top: 100%;
   left: 0;
   margin: -50px;
 }
 
 .ornamen4{
   position: absolute;
-  top: 70%; 
+  top: 100%; 
   right: 0;
   margin: -50px;
 }
